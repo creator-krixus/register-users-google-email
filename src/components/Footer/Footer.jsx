@@ -1,5 +1,8 @@
+import "./Footer.scss"
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <div className="footer">
+      <p className="footer__text">Creado por Wilson Rueda</p>
+    </div>
   )
 }

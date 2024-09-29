@@ -1,5 +1,5 @@
-import { UserAuth } from "../context/AuthContext"
-import { logout } from "../functions/auth";
+import { UserAuth } from "../../context/AuthContext"
+import { logout } from "../../functions/auth";
 import { useNavigate } from "react-router-dom";
 
 export default function UserDashboard() {

@@ -1,9 +1,8 @@
-import { Route, Routes } from "react-router-dom"
-import Home from "../pages/Home"
-import CreateUser from "../pages/CreateUser"
-import Login from "../pages/Login"
-import NavBar from "../components/NavBar/NavBar"
-import Footer from "../components/Footer/Footer"
+import { Route, Routes } from "react-router-dom";
+import Home from "../pages/home/Home";
+import CreateUser from "../pages/create/CreateUser";
+import Login from "../pages/login/Login";
+import NavBar from "../components/NavBar/NavBar";
 
 export default function NonUserRoutes() {
   return (
@@ -15,7 +14,6 @@ export default function NonUserRoutes() {
         <Route path="login" element={<Login />}></Route>
         <Route path="/*" element={<Home />}></Route>
       </Routes>
-      <Footer />
     </div>
   )
 }
