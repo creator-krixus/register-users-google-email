@@ -19,6 +19,7 @@ export default function UserDashboard() {
   };
   return (
     <>
+      <img src={user?.photoURL}></img>
       <div>Welcome {getFirstName()}</div>
       <button onClick={handlerLogout}>logout</button>
     </>

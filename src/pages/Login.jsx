@@ -42,19 +42,19 @@ export default function Login() {
     <div>
       <input
         type="email"
-        placeholder="Email"
+        placeholder="Correo"
         onChange={(e) => setEmail(e.target.value)}
       />
       <input
         type="password"
-        placeholder="Password"
+        placeholder="Contraseña"
         onChange={(e) => setPassword(e.target.value)}
       />
       <button onClick={handleLoginUser}>Login</button>
 
       <hr />
       {/* Botón para iniciar sesión con Google */}
-      <button onClick={handleGoogleSignIn}>Sign in with Google</button>
+      <button onClick={handleGoogleSignIn}>Ingresa con Google</button>
     </div>
   );
 }

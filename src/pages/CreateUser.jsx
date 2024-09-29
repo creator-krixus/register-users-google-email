@@ -56,15 +56,15 @@ export default function CreateUser() {
   };
   return (
     <>
-      <h1>Register</h1>
+      <h1>Registrate</h1>
       <div>
-        <input type="text" placeholder="First name" onChange={(e) => setFirstName(e.target.value)}></input>
-        <input type="text" placeholder="Last name" onChange={(e) => setLastName(e.target.value)}></input>
-        <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}></input>
-        <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}></input>
-        <input type="password" placeholder="Confirm password" onChange={(e) => setConfirmPassword(e.target.value)}></input>
+        <input type="text" placeholder="Nombre" onChange={(e) => setFirstName(e.target.value)}></input>
+        <input type="text" placeholder="Apellido" onChange={(e) => setLastName(e.target.value)}></input>
+        <input type="email" placeholder="Correo" onChange={(e) => setEmail(e.target.value)}></input>
+        <input type="password" placeholder="Contraseña" onChange={(e) => setPassword(e.target.value)}></input>
+        <input type="password" placeholder="Repetir contraseña" onChange={(e) => setConfirmPassword(e.target.value)}></input>
         <button onClick={handleCreateUser}>Registrar</button>
-        <button onClick={handleGoogleSignIn}>Sign in with Google</button>
+        <button onClick={handleGoogleSignIn}>Registrate con  Google</button>
       </div>
     </>
   )
