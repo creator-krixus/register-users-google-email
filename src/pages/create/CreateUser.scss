@@ -1,0 +1,82 @@
+.createUser {
+  text-align: center;
+  padding: 0 12px;
+  &__title {
+    text-align: center;
+    color: #494747;
+  }
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__item {
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: #f5f8f8;
+  }
+  &__password {
+    padding-right: 12px;
+    position: relative;
+    :nth-child(1){
+      width: 100%;
+    }
+  }
+  &__eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  &__send{
+    margin: 30px auto;
+    width: 130px;
+    height: 20px;
+    padding: 6px;
+    border-radius: 12px;
+    color: #fff;
+    background: rgb(209, 96, 55);
+    border: 1px solid transparent;
+    cursor: pointer;
+    &:hover{
+      color: rgb(209, 96, 55);
+      background: #fff;
+      border: 1px solid rgb(209, 96, 55);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  &__content{
+    border-top: 1px solid lightgray;
+    p{
+      color:#494747;
+    }
+  }
+
+  &__google{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 15px;
+    padding: 12px 12px 0 12px;
+    &__image{
+      height: 520px;
+      border-radius: 12px 12px 0 0;
+    }
+    &__container{
+      width: 100%;
+      padding: 0 10px;
+    }
+    &__send{
+      margin: 5px auto;
+    }
+  }
+}

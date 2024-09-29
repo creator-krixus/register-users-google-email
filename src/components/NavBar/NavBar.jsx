@@ -5,10 +5,7 @@ import Menu from '../../assets/bx-menu.svg'
 import './NavBar.scss'
 
 export default function NavBar() {
-  // Estado para controlar la visibilidad del menú en móviles
   const [isMenuVisible, setIsMenuVisible] = useState(false);
-
-  // Función para alternar la visibilidad del menú
   const toggleMenu = () => {
     setIsMenuVisible(!isMenuVisible);
   };
@@ -20,7 +17,7 @@ export default function NavBar() {
           <img src={Menu}></img>
         </div>
         <div className={`navBar__options ${isMenuVisible ? 'show' : ''}`}>
-          <div className="navBar__close" onClick={toggleMenu}>x</div>
+          <div className="navBar__close"><span className='navBar__equis' onClick={toggleMenu}>x</span></div>
           <Link className="navBar__item" to="create-user" onClick={toggleMenu}>Registrate</Link>
           <Link className="navBar__item" to="/login" onClick={toggleMenu}>Log In</Link>
         </div>
