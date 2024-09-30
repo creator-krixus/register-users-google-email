@@ -18,6 +18,7 @@ export default function NavBar() {
         </div>
         <div className={`navBar__options ${isMenuVisible ? 'show' : ''}`}>
           <div className="navBar__close"><span className='navBar__equis' onClick={toggleMenu}>x</span></div>
+          <Link className="navBar__item" to="/" onClick={toggleMenu}>Home</Link>
           <Link className="navBar__item" to="create-user" onClick={toggleMenu}>Registrate</Link>
           <Link className="navBar__item" to="/login" onClick={toggleMenu}>Log In</Link>
         </div>
